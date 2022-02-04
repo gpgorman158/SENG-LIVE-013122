@@ -13,7 +13,21 @@ const character = {
   img: "www.img.com",
   likes: 0,
 };
-
+const character2 = {
+  name: "Pikachu",
+  img: "www.img.com",
+  likes: 0,
+};
+function increaseValue (object, object2){
+  return {...object, ...object2}
+}
+console.log(increaseValue(character, character2));
+//increaseValue (character, 'likes');
+//console.log(character);
+//increaseValue (character, 'likes');
+//console.log(character);
+//increaseValue (character, 'likes');
+//console.log(character);
 // Retreiving property values from an object
 
 // bracket notation
@@ -71,5 +85,9 @@ const pikachu = {
     },
   ],
 };
+
+function printAbilities (object) {
+  
+}
 
 // BONUS: Modify printAbilities so that it returns the string as: 'Abilities: static, lightning-rod'
